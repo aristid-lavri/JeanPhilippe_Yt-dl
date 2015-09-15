@@ -32,15 +32,17 @@ using Windows.Storage;
 using System.Threading.Tasks;
 using jeanphilippe_Yt-dl;
 
-// your Youtube video url
-string Url = "http://www.youtube.com/watch?v=bDCh8frla2c";
+// Your Youtube video url
+string Url = "insert video url";
 
-// you must need to create Youtube ApiKey
-//go to   and create your Youtube ApiKey 
+//You need to create Youtube ApiKey
+//Go to https://developers.google.com/youtube/v3/getting-started , follow the instructions
+//And create your Youtube ApiKey 
 string ApiKey = " your Youtube Apikey here";
 
 string ApplicationName = "Name of your application";
 
+//This function will return the video file when it'll finish to download it
 private async Task<StorageFile> Video_Downloading(string videoUrl, string fileName)
 {
             ProcessDownload process = new ProcessDownload(ApiKey, ApplicationName);
@@ -58,9 +60,10 @@ private async Task<StorageFile> Video_Downloading(string videoUrl, string fileNa
             BackgroundDownloader _downloader = new BackgroundDownloader();
             DownloadOperation operation = _downloader.CreateDownload(source, file);
             
-            await operation.StartAsync();
+            await operation.StartAsync(); //Start downloading your video in background
             return file;
 }
 
- var f = await YT_Downloading(Url, "MyVideo");
+ // The file that represents your video file downloaded
+ var f = await Video_Downloading(Url, "MyVideo");
 ```
