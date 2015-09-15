@@ -12,9 +12,9 @@ JeanPhilippe_Yt-dl is a library for Windows Runtime (WinRT), written in C#, that
 
 ## NuGet
 
-[JeanPhilippe_Yt-dl at NuGet](http://nuget.org/packages/jeanphilippe_Yt-dl/1.0.2)
+[JeanPhilippe_Yt-dl at NuGet](https://www.nuget.org/packages/JeanPhilippe_Youtube-dl/)
 
-    Install-Package jeanphilippe_Yt-dl
+    Install-Package JeanPhilippe_Youtube-dl
 
 ## License
 
@@ -49,7 +49,7 @@ private async Task<StorageFile> Video_Downloading(string videoUrl, string fileNa
 
             IEnumerable<VideoInfo> List_video = await DownloadUrlResolver.GetDownloadUrls(videoUrl);
 
-            VideoInfo video = List_Video.First(info => info.VideoType == VideoType.Mp4 && info.Resolution == 360);
+            VideoInfo video = List_video.First(info => info.VideoType == VideoType.Mp4 && info.Resolution == 360);
 
             StorageFile file = await ApplicationData.Current.LocalFolder.CreateFileAsync(fileName,
                 CreationCollisionOption.ReplaceExisting);
