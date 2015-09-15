@@ -1,8 +1,8 @@
-# JeanPhilippe_Yt-dl
+# Jean Philippe Youtube Url Downloader (JeanPhilippe_Youtube-dl)
 A Windows Runtime library, that allow you to get downloadable url of Youtube video link.
 
 ## Overview
-JeanPhilippe_Yt-dl is a library for Windows Runtime (WinRT), written in C#, that allow you to get downloadable url of Youtube video link.
+JeanPhilippe_Youtube-dl is a library for Windows Runtime (WinRT), written in C#, that allow you to get downloadable url of Youtube video link.
 
 ## Target platforms
 
@@ -12,13 +12,13 @@ JeanPhilippe_Yt-dl is a library for Windows Runtime (WinRT), written in C#, that
 
 ## NuGet
 
-[JeanPhilippe_Yt-dl at NuGet](https://www.nuget.org/packages/JeanPhilippe_Youtube-dl/)
+[JeanPhilippe_Youtube-dl at NuGet](https://www.nuget.org/packages/JeanPhilippe_Youtube-dl/)
 
     Install-Package JeanPhilippe_Youtube-dl
 
 ## License
 
-The JeanPhilippe_Yt-dl URL-extraction code is licensed under the [MIT License](http://opensource.org/licenses/MIT)
+The JeanPhilippe_Youtube-dl URL-extraction code is licensed under the [MIT License](http://opensource.org/licenses/MIT)
 
 ## Example code
 
@@ -30,7 +30,7 @@ using System.IO;
 using System.Linq;
 using Windows.Storage;
 using System.Threading.Tasks;
-using jeanphilippe_Yt-dl;
+using JeanPhilippe_Youtube-dl;
 
 // Your Youtube video url
 string Url = "insert video url";
